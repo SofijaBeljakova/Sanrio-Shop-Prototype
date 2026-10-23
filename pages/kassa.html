@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassa - Sanrio Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container top-header">
+            <a href="../index.html" class="logo"><h1>SANRIO STORE</h1></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="checkout-container">
+            
+            <form id="checkout-form" onsubmit="submitOrder(event)">
+                <h2>Kassa ja tellimuse vormistamine</h2>
+                
+                <h3>1. Kontaktandmed</h3>
+                <div class="form-group">
+                    <label for="name">Ees- ja perekonnanimi *</label>
+                    <input type="text" id="name" required placeholder="Mari Maasikas">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-post *</label>
+                    <input type="email" id="email" required placeholder="mari@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefoninumber *</label>
+                    <input type="tel" id="phone" required placeholder="+372 5555 5555" 
+                        pattern="[+]?[0-9\s\-]{7,15}" 
+                        oninput="this.value = this.value.replace(/[^0-9+\s\-]/g, '')">
+                </div>
+
+                <h3>2. Tarneviis</h3>
+                <div class="form-group">
+                    <label for="shipping">Vali tarneviis *</label>
+                    <select id="shipping" onchange="updateTotal()" required>
+                        <option value="smartpost">SmartPOST pakiautomaat (+3.50 €)</option>
+                        <option value="omniva">Omniva pakiautomaat (+2.99 €)</option>
+                        <option value="courier">Kuller DPD (+6.00 €)</option>
+                        <option value="pickup">Tulen ise järele (Tasuta)</option>
+                    </select>
+                </div>
+
+               
+                <div class="form-group" id="locker-group">
+                    <label for="locker" id="locker-label">Vali pakiautomaat *</label>
+                    <select id="locker">
+                        
+                    </select>
+                </div>
+
+                
+                <div class="form-group" id="address-group" style="display: none;">
+                    <label for="address">Tarneaadress (Tänav, maja, korter, linn, indeks) *</label>
+                    <input type="text" id="address" placeholder="Roosiku 5-12, Tallinn, 10111">
+                </div>
+
+                <h3>3. Makseviis</h3>
+                <div class="form-group">
+                    <label for="payment">Vali makseviis *</label>
+                    <select id="payment" required>
+                        <option value="bank">Pangalink (Swedbank, SEB, LHV jne)</option>
+                        <option value="card">Krediitkaart (Visa / MasterCard)</option>
+                        <option value="invoice">Arve alusel tasumine</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-order-btn">Kinnita ja esita tellimus</button>
+            </form>
+            
+            <div class="order-summary-box">
+                <h3>Tellimuse kokkuvõte</h3>
+                <div id="checkout-items-list" style="margin: 15px 0; max-height: 200px; overflow-y: auto;">
+                    
+                </div>
+                <hr style="border: 0; border-top: 1px solid #ffdae9;">
+                <p>Vahesumma: <span id="subtotal-price">0.00</span> €</p>
+                <p>Tarne: <span id="shipping-price">3.50</span></p>
+                <h3>Kokku tasuda: <span id="final-total-price">0.00</span> €</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

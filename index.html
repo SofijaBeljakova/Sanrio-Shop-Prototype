@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Collector - Pehmed Mänguasjad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="home">
+
+    <div id="topbar" class="fixed-top">
+        <div class="container">
+            <h4 class="top-bar-text">
+                <p>֍ TASUTA SAATMINE OSTUDELE ALATES 50 €    ֍    UUS KOLLEKTSIOON ON KOHAL! ֍</p>
+            </h4>
+        </div>
+    </div>
+
+    <header>
+        <div class="container top-header">
+            <a href="index.html" class="logo">
+                <h1 style="color: #ff4d94; margin: 0; font-size: 24px;">SANRIO STORE</h1>
+            </a>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="pages/minu-konto.html">Logi sisse / Konto</a></li>
+                    <li><a href="pages/tellimisinfo.html">Tellimine</a></li>
+                    <li><a href="pages/kkk.html">KKK</a></li>
+                    <a href="pages/ostukorv.html" class="cart-link">
+                            🛒 Ostukorv (<span id="cart-counter">0</span>)
+                        
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+<nav class="main-menu">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Avaleht</a></li>
+            <li><a href="pages/kittypood.html">Hello Kitty</a></li>
+            <li><a href="pages/kuromipood.html">Kuromi</a></li>
+            <li><a href="pages/melodypood.html">My Melody</a></li>
+            <li><a href="pages/cinnapood.html">Cinnamoroll</a></li>
+            <li><a href="pages/pood.html">Kõik tooted</a></li>
+            <li><a href="pages/kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+   <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tere tulemast Sanrio maailma!</h1>
+                <p>Leia oma uus lemmik pehme sõber meie eksklusiivsest valikust.</p>
+                <a href="pages/pood.html" class="cta-button">Vaata poodi</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="container">
+        <div class="product-grid">
+            
+            
+            <div class="product-card">
+                <a href="pages/Cinnamoroll.html" class="product-link">
+                    <img src="images/cinnamoroll.png" alt="Cinnamoroll">
+                    <h3>Cinnamoroll Pastel Plush</h3>
+                </a>
+                <p class="price">28.90 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <a href="pages/Hello-kitty.html" class="product-link">
+                    <img src="images/hello-kitty.png" alt="Hello Kitty">
+                    <h3>Hello Kitty Classic Plush</h3>
+                </a>
+                <p class="price">22.50 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <a href="pages/Kuromi-mymelody.html" class="product-link">
+                    <img src="images/kuromi-melody.png" alt="Kuromi ja Melody">
+                    <h3>Kuromi & My Melody Set</h3>
+                </a>
+                <p class="price">45.00 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="pages/Pompompurin.html" class="product-link">
+                    <img src="images/pompompurin.png" alt="pompompurin">
+                    <h3>Pompompurin Pajama Party Plush</h3>
+                </a>
+                <p class="price">24.99 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <a href="pages/Usahan.html" class="product-link">
+                    <img src="images/usahana.png" alt="usahana">
+                    <h3>Usahana Plush</h3>
+                </a>
+                <p class="price">26.00 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="pages/Sweet.html" class="product-link">
+                    <img src="images/sweet.png" alt="sweet">
+                    <h3>My Sweet Piano Plush</h3>
+                </a>
+                <p class="price">20.67 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="pages/Keroppi.html" class="product-link">
+                    <img src="images/keroppi.png" alt="keroppi">
+                    <h3>Keroppi Baby Plush</h3>
+                </a>
+                <p class="price">19.99 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <a href="pages/Choco.html" class="product-link">
+                    <img src="images/choco.png" alt="choco">
+                    <h3>Chococat Bean Plush</h3>
+                </a>
+                <p class="price">21.00 €</p>
+                <div class="button-group">
+                    <button class="add-to-cart">Lisa ostukorvi</button>
+                    <button class="add-to-collection" style="background-color: #ffdae9; color: #d10056; margin-top: 5px; border: none; padding: 8px; border-radius: 10px; cursor: pointer; width: 100%;">+ Lisa kollektsiooni</button>
+                </div>
+            </div>
+
+
+        </div> 
+    </div> 
+
+    </section>
+</div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section large">
+                <h3>Sanrio Collector</h3>
+                <p>Oleme ametlik Sanrio stiilis pehmete mänguasjade e-pood Eestis. Meie missioon on tuua rõõmu igale kollektsionäärile.</p>
+            </div>
+            <div class="footer-section small">
+                <h3>Info</h3>
+                <ul>
+                    <li><a href="pages/pood.html">Pood</a></li>
+                    <li><a href="pages/tellimisinfo.html">Tellimisinfo</a></li>
+                    <li><a href="pages/kkk.html">KKK</a></li>
+                    <li><a href="pages/kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-section small">
+                <h3>Võta ühendust</h3>
+                <ul>
+                    <li>E-post: info@sanriostore.ee</li>
+                    <li>Telefon: +372 555 1234</li>
+                    <li>Aadress: Tallinn, Estonia</li>
+                </ul>
+            </div>
+        </div>
+       
+ <footer>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sanrio Collector. Kõik õigused kaitstud.</p>
+    </div>
+</footer>
+
+</body>
+</html>

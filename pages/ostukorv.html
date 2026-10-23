@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostukorv - Sanrio Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <style>
+        .cart-container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 20px; border: 1px solid #ffdae9; }
+        .cart-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #ffdae9; padding: 15px 0; }
+        .cart-item img { width: 60px; height: 60px; object-fit: contain; background: #fff5f8; border-radius: 10px; margin-right: 15px; }
+        .cart-item-info { display: flex; align-items: center; flex-grow: 1; }
+        .remove-btn { background: #ff4d94; color: white; border: none; padding: 5px 12px; border-radius: 10px; cursor: pointer; font-size: 0.9em; }
+        .remove-btn:hover { background: #d10056; }
+        .cart-summary { margin-top: 30px; text-align: right; }
+        .cart-summary h3 { color: #d10056; }
+        .checkout-btn { display: inline-block; background: #ff4d94; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+        .checkout-btn:hover { background: #d10056; }
+        .empty-cart { text-align: center; color: #888; padding: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container top-header">
+            <a href="../index.html" class="logo"><h1>SANRIO STORE</h1></a>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="../index.html">Avaleht</a></li>
+                    <li><a href="../pages/ostukorv.html">Ostukorv (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cart-container">
+            <h2>Sinu ostukorv</h2>
+            <div id="cart-items-list">
+                
+            </div>
+            
+            <div class="cart-summary" id="cart-summary-section" style="display: none;">
+                <h3>Kokku: <span id="cart-total">0.00</span> €</h3>
+                <a href="../pages/kassa.html".html" class="checkout-btn">Vormista tellimus (Kassa)</a>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

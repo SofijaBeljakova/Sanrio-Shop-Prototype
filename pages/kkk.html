@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK - Sanrio Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+    <style>
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            border: 1px solid #ffdae9;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: #d10056;
+        }
+        .dropdown {
+            display: none; 
+            padding: 0 20px 20px 20px;
+            color: #555;
+            line-height: 1.6;
+            border-top: 1px solid #fff0f5;
+        }
+        .toggle-icon {
+            font-size: 20px;
+            color: #ff4d94;
+        }
+    </style>
+</head>
+<body class="faq">
+
+    <header>
+        <div class="container top-header">
+            <a href="../index.html" class="logo"><h1>SANRIO STORE</h1></a>
+            <nav class="top-menu">
+                <ul>
+                    <li><a href="../pages/minu-konto.html">Logi sisse</a></li>
+                    <li><a href="../pages/kkk.html">KKK</a></li>
+                </ul>
+            </nav>
+        </div>
+       <nav class="main-menu">
+    <div class="container">
+        <ul>
+            <li><a href="../index.html">Avaleht</a></li>
+            <li><a href="../pages/kittypood.html">Hello Kitty</a></li>
+            <li><a href="../pages/kuromipood.html">Kuromi</a></li>
+            <li><a href="../pages/melodypood.html">My Melody</a></li>
+            <li><a href="../pages/cinnapood.html">Cinnamoroll</a></li>
+            <li><a href="../pages/pood.html">Kõik tooted</a></li>
+            <li><a href="../pages/kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+    </header>
+
+    <main class="container" style="padding: 50px 0;">
+        <h1 style="text-align: center; color: #ff4d94;">Korduma kippuvad küsimused</h1>
+        
+        <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleDropdown(event)">
+                    Kas tooted on originaalsed?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="dropdown">
+                    Jah, kõik meie poes müüdavad Sanrio pehmed mänguasjad on 100% litsentseeritud ja originaalsed. Meie koostööpartnerid on ametlikud Sanrio edasimüüjad.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleDropdown(event)">
+                    Kui kiiresti tellimus kohale jõuab?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="dropdown">
+                    Eesti-sisesed tellimused jõuavad kohale 1-3 tööpäeva jooksul. Soome saadetised jõuavad kohale 3-5 tööpäeva jooksul.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleDropdown(event)">
+                    Kas ma saan toote tagastada?
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="dropdown">
+                    Jah, sul on õigus toode tagastada 14 päeva jooksul pärast kättesaamist, eeldusel et mänguasi on originaalpakendis ja siltidega.
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Sanrio Store. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
